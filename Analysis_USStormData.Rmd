@@ -1,8 +1,10 @@
 ---
-title:  "ANALYSIS OF THE INAUSPICIOUS IMPACTS OF US STORMS ON HEALTH AND ECONOMY"
+title: "ANALYSIS OF THE INAUSPICIOUS IMPACTS OF US STORMS ON HEALTH AND ECONOMY"
 author: "Shubhendu Dash"
-date:   "08/07/2020"
-output: html_document
+date: "08/07/2020"
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -59,7 +61,7 @@ StormData$PROPDMGEXP2[which(StormData$PROPDMGEXP == "B")] <- 1000000000
 table(StormData$PROPDMGEXP2)
 ```
 
-## 1. Across the United States, which types of events (as indicated in the \color{red}{\verb|EVTYPE|}EVTYPE variable) are most harmful with respect to population health?
+## 1. Across the United States, which types of events (as indicated in the EVTYPE variable) are most harmful with respect to population health?
 
 Fatalities and injuries have the most impact on public health, so I will present what types of severe weather are the most dangerous.
 
